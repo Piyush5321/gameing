@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #07060a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #0f0b0d;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 43, 43, 0.4);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 28px;
+    text-shadow: 0 0 10px #ffffff;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #ff2b2b;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    padding: 10px 15px;
+    border: 1px solid #ff2b2b;
+    border-radius: 6px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px #bcffe2;
+    transition: 0.2s;
+}
+
+.option-btn:hover {
+    background: rgba(255, 43, 43, 0.2);
+}
+
+.option-btn.correct {
+    background: #ff2b2b;
+    color: #07060a;
+}
+
+.option-btn.wrong {
+    background: transparent;
+    color: #bcffe2;
+    opacity: 0.5;
+}
+
+.neon-btn {
+    padding: 10px 20px;
+    border: 1px solid #ff2b2b;
+    border-radius: 8px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px #bcffe2;
+}
+
+.message {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
