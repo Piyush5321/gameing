@@ -2,15 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Game Website</title>
+    <title>Gamer's NEXUS</title>
     <style>
-      body {
+      /* body {
         background: #0a0a0a;
         color: #fffefd;
         font-family: "Courier New", monospace;
         margin: 0;
         padding: 0;
-      }
+      } */
+
+      body {
+      background: #0a0a0a url("download.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fffefd;
+     font-family: "Courier New", monospace;
+     margin: 0;
+     padding: 0;
+    }
 
       /* ---------- ABOUT SECTION ---------- */
       .about-section {
@@ -31,7 +40,7 @@
         font-size: 3rem;
         margin-bottom: 20px;
         color: #ffffff;
-        text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff1a1a, 0 0 30px #cc0000;
+        text-shadow: 0 0 10px #d045f6, 0 0 20px #d045f6, 0 0 30px #d045f6;
       }
 
       .about-text p {
@@ -59,7 +68,7 @@
       .events-section h1 {
         font-size: 3rem;
         color: #ffffff;
-        text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff1a1a, 0 0 30px #cc0000;
+        text-shadow: 0 0 10px #d045f6, 0 0 20px #d045f6, 0 0 30px #d045f6;
         margin-bottom: 40px;
         text-align: center;
       }
@@ -115,16 +124,23 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 0 15px #ff1a1a; /* red neon glow */
+      box-shadow: 0 0 15px #79f3f3; /* red neon glow */
     }
 
     .logo {
-        font-family: 'Trebuchet MS', sans-serif;
-      font-size: 30px;
-      font-weight: bold;
-      color: #ffffff; /* white text */
-      text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff1a1a, 0 0 30px #cc0000; /* red neon glow */
+       display: flex;
+  align-items: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+      text-shadow: 0 0 10px #9cf1e5, 0 0 20px #9cf1e5, 0 0 30px #9cf1e5; /* red neon glow */
+      
+       
     }
+    .logo-img {
+    height: 70px;
+     margin-right: 20px;
+}
 
     nav a {
       color: #fff;
@@ -138,7 +154,7 @@
 
     nav a:hover {
       color: #ff1a1a; 
-      text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff1a1a, 0 0 30px #cc0000;
+      text-shadow: 0 0 10px #9cf1e5, 0 0 20px #9cf1e5, 0 0 30px #9cf1e5;
     }
 
 footer {
@@ -146,13 +162,13 @@ footer {
     margin-top: 40px;
     background: #111;
     color: #ffffff; /* white text */
-      text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff1a1a, 0 0 30px #cc0000;
+      text-shadow: 0 0 10px #9cf1e5, 0 0 20px #9cf1e5, 0 0 30px #9cf1e5;
 }
 
 .bottom{
 font-size: 24px;
     color: #ffffff; /* white text */
-    text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff1a1a, 0 0 30px #cc0000;
+    text-shadow: 0 0 10px #9cf1e5, 0 0 20px #9cf1e5, 0 0 30px #9cf1e5;
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
@@ -165,7 +181,9 @@ font-size: 24px;
 <body>  
 
   <header>
-    <div class="logo">miniArcade</div>
+     <div class="logo">
+    <img src="pngh (2).png" alt="Site Logo" class="logo-img" />
+   <img src="pngh (1).png" alt="Site Logo" class="logo-img" /></div>
     <nav>
       <a href="#">Home</a>
       <a href="#">Games</a>
@@ -202,30 +220,13 @@ font-size: 24px;
 
       <div class="about-logo">
         <img
-          src="ChatGPT Image Jun 18, 2025, 09_06_17 PM.png"
+          src="pngh.png"
           alt="GameName Logo"
         />
       </div>
     </section>
 
-    <!-- ===== ABOUT SECTION 2 ===== -->
-    <section class="about-section">
-      <div class="about-text">
-        <h1>Gateways</h1>
-        <p>
-          Gateways is the national technical fest, held annually with lots of
-          exciting competitions, gaming events, coding challenges, and creative
-          workshops that spark innovation and teamwork among students.
-        </p>
-      </div>
-
-      <div class="about-logo">
-        <img
-          src="ChatGPT Image Jun 18, 2025, 09_06_17 PM.png"
-          alt="Gateways Logo"
-        />
-      </div>
-    </section>
+   
 
     <!-- ===== EVENTS SECTION ===== -->
     <section class="events-section">
@@ -234,11 +235,13 @@ font-size: 24px;
         <!-- Event Card 1 -->
         
         <div class="event-card">
-          <img src="ChatGPT Image Jun 18, 2025, 09_06_17 PM.png" alt="Game 1" />
+            <a href="ticktack/tick.html">
+          <img src="tickimg.png" alt="Game 1" />
           <div class="event-card-content">
             <h3>Game 1</h3>
             <p>Short description about game 1 goes here.</p>
           </div>
+          </a>
         </div>
 
         <!-- Event Card 2 -->
